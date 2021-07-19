@@ -1,0 +1,28 @@
+{
+  "mysql": {
+    "ip": "10.86.193.139",
+    "user": "root",
+    "password": "123456",
+    "database": "kuka"
+  },
+  "salesforce": {
+    "enable": 1,
+    "path": "./chromedriver.exe",
+    "url": "https://kuka.lightning.force.com/lightning/o/Case/list?filterName=00B1i000000wVuYEAU",
+    "page": 5,
+    "refresh_button":"//*[@id=\"brandBand_1\"]/div/div/div/div/div[1]/div[2]/div[3]/force-list-view-manager-button-bar/div/div[1]/lightning-button-icon/button",
+    "css_selector" : "#brandBand_1 > div > div > div > div > div.slds-grid.listDisplays.safari-workaround-anchor > div > div.slds-col.slds-no-space.forceListViewManagerPrimaryDisplayManager > div.undefined.forceListViewManagerGrid > div.listViewContent.slds-table--header-fixed_container > div.uiScroller.scroller-wrapper.scroll-bidirectional.native > div > div > table > tbody > tr:nth-child(%s)"
+  },
+  "parts": {
+    "enable": 1,
+    "url": "https://wx1.kuka-robotics.cn/kd/adminapi/parts",
+    "number": 300,
+    "days": 30
+  },
+  "assignment": {
+    "enable": 1,
+    "start_url": "http://wx1.kuka-robotics.cn/index.php/Qwadmin/login/index.html",
+    "log_in_url": "http://wx1.kuka-robotics.cn/index.php/Qwadmin/login/login.html",
+    "days": 10
+  }
+}
